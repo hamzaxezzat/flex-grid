@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+/* Grid System */
+/* 
+parent
+- display: grid | inline-grid
+- grid-template-columns: [Number of Columns In] => [px, %, Auto Fraction, Reapeat(),Mix]
+- grid-template-columns: 100px repeat(3,50px) 25% 300px 1fr auto ; 
+- fr: take everything ||| auto: take the min if fr exist
+ */
+.gparent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 100px repeat(3, 50px) 25% 1fr 2fr auto 1fr;
+}
+
+.gparent .child {
+    background-color: red;
+    border: 1px solid wheat;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
